@@ -4,7 +4,7 @@ tde
 Trash Data Eraser
 
 ================================================================
-
+```
                                     dddddddd                    
           tttt                      d::::::d                    
        ttt:::t                      d::::::d                    
@@ -22,5 +22,5 @@ Trash Data Eraser
        tt::::::::::::::t d:::::::::::::::::d e::::::::eeeeeeee  
          tt:::::::::::tt  d:::::::::ddd::::d  ee:::::::::::::e  
            ttttttttttt     ddddddddd   ddddd    eeeeeeeeeeeeee  
-
+```
 ================================================================
