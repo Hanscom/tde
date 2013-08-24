@@ -12,8 +12,10 @@
 
 CC          = gcc
 LDFLAGS     = -Wall -Werror -Wextra
-NAME        = TDE
+GUIFLAGS	= `pkg-config --cflags --libs gtk+-2.0`
+NAME        = tde
 PATH_SRCS   = ./sources
+GUI_SRCS	= $(PATH_SRCS)/gui
 PATH_INC    = ./includes
 SRC         = $(PATH_SRCS)/main.c
 OBJ         = $(SRC:.c=.o)
@@ -21,10 +23,10 @@ OBJ         = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	gcc $(LDFLAGS) -o $(NAME) $(OBJ) -I $(PATH_INC)
+	gcc $(LDFLAGS) -o $(NAME) $(OBJ) -I $(PATH_INC) $(GUIFLAGS)
 
 .c.o:
-	$(CC) $(LDFLAGS) -c $< -o $@ -I $(PATH_INC)
+	$(CC) $(LDFLAGS) -c $< -o $@ -I $(PATH_INC) $(GUIFLAGS)
 
 clean:
 	/bin/rm -f $(OBJ)
