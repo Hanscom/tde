@@ -17,7 +17,7 @@ NAME        = tde
 PATH_SRCS   = ./sources
 GUI_SRCS	= $(PATH_SRCS)/gui
 PATH_INC    = ./includes
-SRC         = $(PATH_SRCS)/main.c
+SRC         = $(PATH_SRCS)/main.c $(GUI_SRCS)/init.c
 OBJ         = $(SRC:.c=.o)
 
 all: $(NAME)
